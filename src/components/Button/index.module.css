@@ -1,0 +1,32 @@
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--white-text-3);
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.35rem, 2.5vw, 1.65rem);
+  transition: all 0.15s ease;
+  box-shadow: 0 0rem 2rem var(--white-text-3);
+  animation: btnAnimation 0.15s ease-out forwards;
+}
+
+@keyframes btnAnimation {
+  0% {
+    opacity: 0;
+    translate: 0 10rem;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+.btn:hover,
+.btn:focus-visible {
+  outline: transparent;
+  color: var(--white-text-1);
+  box-shadow: 0 0rem 0rem 0.1rem var(--white-text-3);
+}

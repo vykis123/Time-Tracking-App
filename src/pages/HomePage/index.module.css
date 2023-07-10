@@ -1,0 +1,18 @@
+.container {
+  min-width: 80%;
+  padding: 2rem;
+  display: grid;
+  grid-template-areas:
+    "user card card card"
+    "user card card card";
+  gap: 2.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    min-width: 90%;
+    grid-template-areas:
+      "user user user user"
+      "card card card card";
+  }
+}

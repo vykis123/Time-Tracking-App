@@ -1,0 +1,43 @@
+.container {
+  min-height: 100vh;
+  background-color: var(--background-color);
+  display: grid;
+  place-items: center;
+}
+
+.error {
+  text-align: center;
+  padding: 1rem 2rem;
+  line-height: 2.5rem;
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  color: var(--white-text-2);
+  font-weight: 500;
+  text-shadow: 0 0 1rem var(--grey-text-2);
+  animation: textAnimation 0.25s ease-in forwards;
+}
+
+.error__link {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--main-bg);
+  text-shadow: 0 0 1.25rem var(--bg-purple);
+  transition: letter-spacing 0.15s ease-in, color 0.15s ease-in;
+}
+
+.error__link:hover,
+.error__link:focus-visible {
+  outline: transparent;
+  color: var(--bg-purple);
+  letter-spacing: 1px;
+}
+
+@keyframes textAnimation {
+  0% {
+    opacity: 0;
+    translate: -10rem 0;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}

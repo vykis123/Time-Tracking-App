@@ -1,0 +1,102 @@
+.user {
+  background-color: var(--main-bg);
+  border-radius: 1rem;
+  padding: 2.5rem;
+  grid-area: user;
+  max-height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user__text {
+  font-weight: 300;
+  color: var(--white-text-2);
+  font-size: clamp(2.5rem, 2.5vw, 2rem);
+  text-shadow: 0 0 0.2rem var(--white-text-2);
+  line-height: 3.5rem;
+  text-align: center;
+}
+
+.user__btn {
+  margin-top: 2.5rem;
+  padding: 1.5rem 1rem;
+  background: none;
+  border: none;
+  color: #ff8b6485;
+  font-size: clamp(1.5rem, 2.5vw, 1.35rem);
+  cursor: pointer;
+  position: relative;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  transition: color 0.15s ease-in, box-shadow 0.55s ease-in;
+}
+
+.user__btn span:first-child {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0.1rem;
+  background: var(--bg-red);
+  transition: 0.55s;
+  transform: scale(0);
+  transform-origin: bottom;
+}
+.user__btn span:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0.1rem;
+  width: 100%;
+  background: var(--bg-red);
+  transition: 0.55s;
+  transform: scale(0);
+  transform-origin: top left;
+}
+.user__btn span:nth-child(3) {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 0.1rem;
+  background: var(--bg-red);
+  transition: 0.55s;
+  transform: scale(0);
+  transform-origin: top;
+}
+.user__btn span:nth-child(4) {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.1rem;
+  width: 100%;
+  background: var(--bg-red);
+  transition: 0.55s;
+  transform: scale(0);
+  transform-origin: bottom right;
+}
+
+.user__btn:hover,
+.user__btn:focus-visible {
+  outline: transparent;
+  box-shadow: 0 0.2rem 0.5rem #ff8b6485;
+  color: var(--bg-orange);
+}
+
+.user__btn:hover.user__btn span:first-child,
+.user__btn:focus-visible.user__btn span:first-child {
+  transform: scale(1);
+}
+.user__btn:hover.user__btn span:nth-child(3),
+.user__btn:focus-visible.user__btn span:nth-child(3) {
+  transform: scale(1);
+}
+.user__btn:hover.user__btn span:nth-child(2),
+.user__btn:focus-visible.user__btn span:nth-child(2) {
+  transform: scale(1);
+}
+.user__btn:hover.user__btn span:nth-child(4),
+.user__btn:focus-visible.user__btn span:nth-child(4) {
+  transform: scale(1);
+}
