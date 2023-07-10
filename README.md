@@ -19,7 +19,8 @@ To start this project on your local machine, just fork this repo, run npm i and 
 
 [Live version:](https://time-tracking-application.netlify.app/)
 
-![image](https://github.com/vykis123/time-tracker/assets/82774076/8b305954-6117-440f-b13b-a666c83d355a)
-![image](https://github.com/vykis123/time-tracker/assets/82774076/06b7196e-816a-4c33-988f-dbe6991ea3d6)
-![image](https://github.com/vykis123/time-tracker/assets/82774076/cf55c99d-e660-4aa5-a973-58300838905d)
-![image](https://github.com/vykis123/time-tracker/assets/82774076/0982818f-99b5-446f-a620-f7f90f2687e0)
+![image](https://github.com/vykis123/Time-Tracking-App/assets/82774076/60f96933-88bb-4b93-8de3-42b3c0bc5498)
+
+![image](https://github.com/vykis123/Time-Tracking-App/assets/82774076/31b2bca6-4227-42ab-8e38-2a7aba5e7db5)
+
+![image](https://github.com/vykis123/Time-Tracking-App/assets/82774076/d534a116-78d6-420b-8f61-d1b284f460b4)
